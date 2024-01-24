@@ -16,3 +16,9 @@ public:void draw() override{cout<<"Inside Rectangle::draw() method."<<endl;}
 
 };
 
+
+int main() {
+    ShapeFactory shapeFactory = new ShapeFactory();
+Shape shape1 = shapeFactory.getShape("CIRCLE");shape1.draw();
+Shape shape2 = shapeFactory.getShape("RECTANGLE");shape2.draw();
+}
